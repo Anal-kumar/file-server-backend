@@ -6,7 +6,8 @@
     "type": "module",
     "scripts": {
         "start": "node server.js",
-        "dev": "node --watch server.js"
+        "dev": "node --watch server.js",
+        "build": "echo 'No build step required'"
     },
     "keywords": [
         "file-server",
@@ -27,6 +28,6 @@
         "express-rate-limit": "^7.1.5"
     },
     "engines": {
-        "node": ">=18.0.0"
+        "node": "20.x"
     }
 }
