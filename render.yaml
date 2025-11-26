@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: file-server-backend
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 20.11.0
+      - key: PORT
+        value: 10000
+    disk:
+      name: data
+      mountPath: /var/data
+      sizeGB: 1
